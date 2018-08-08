@@ -41,6 +41,7 @@ public class UserServlet extends HttpServlet {
             }
             else {
             	out.println("opertype unrecognized");
+				out.println("for test");
             }
         }
         
