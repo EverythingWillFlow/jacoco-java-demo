@@ -24,7 +24,7 @@ public class UserServlet extends HttpServlet {
         opertype = request.getParameter("opertype");
         
         if (opertype==null) {
-        	out.println("opertype is null");
+        	out.println("opertype is null for test");
         }
         else {
             if(opertype.equals("add")) {
@@ -35,13 +35,15 @@ public class UserServlet extends HttpServlet {
             }
             else if (opertype.equals("del")) {
             	userdel(name, out);
+				out.println("for test");
             }
             else if (opertype.equals("query")) {
             	userquery(out);
+				out.println("for test");
             }
             else {
             	out.println("opertype unrecognized");
-				out.println("for test");
+                out.println("for test");
             }
         }
         
