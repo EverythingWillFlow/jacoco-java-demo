@@ -23,5 +23,13 @@
       <servlet-name>ZooServlet</servlet-name>
       <url-pattern>/zooServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+      <servlet-name>TestServlet</servlet-name>
+      <servlet-class>com.jacoco.TestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>TestServlet</servlet-name>
+      <url-pattern>/testServlet</url-pattern>
+  </servlet-mapping>
   
 </web-app>
